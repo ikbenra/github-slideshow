@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WijSAmen — De derde mogelijkheid</title>
+<style>
+:root{font:16px/1.6 system-ui,sans-serif;color:#18332e;background:#f3f7f4}*{box-sizing:border-box}
+body{margin:0}main{max-width:930px;margin:auto;padding:20px}header{background:linear-gradient(120deg,#153d38,#236f57);color:white;padding:30px;border-radius:18px}
+h1{font-size:clamp(2rem,6vw,3rem);line-height:1.1}header p{max-width:650px}section{background:white;border:1px solid #dce6df;border-radius:18px;margin-top:16px;padding:24px}
+h2{margin-top:0;font-size:1.3rem}.hint{font-size:.85rem;color:#4e655e}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:20px}
+label{display:flex;justify-content:space-between;font-weight:600}input{width:100%;accent-color:#1e6956}output{font-variant-numeric:tabular-nums}
+#answer{padding:16px;background:#ebf4ee;border-radius:10px;font-weight:600}#answer.not{background:#fff1e7}
+table{border-collapse:collapse;width:100%;min-width:690px}th,td{border-bottom:1px solid #dce6df;padding:10px;text-align:left;font-size:.85rem}th{background:#eff4f0}
+.scroll{overflow-x:auto}button{background:white;border:1px solid #86ab95;border-radius:9px;padding:10px;margin:14px 0;color:#164d3a;cursor:pointer}
+</style></head><body><main>
+<header><div>WIJSAMEN • INTERACTIEVE DENKPROEF</div><h1>De derde mogelijkheid</h1>
+<p>Wat als het beschermen van het grotere geheel niet hoeft te betekenen dat individuele mogelijkheden verloren gaan?</p>
+<strong>Fictieve demonstratie, geen bewijs van werkelijke effecten.</strong></header>
+<section><h2>Geen rancune. Wel vrijwillige bijdragen en stevige grenzen.</h2>
+<p>Zelfs als er in een situatie daadwerkelijk schade of onrecht is ontstaan, willen wij ruimte maken voor herstel en betere oplossingen, niet voor vergelding. We nemen geen wraakmotief bij anderen aan zonder bewijs.</p>
+<p>WijSAmen staat open voor <strong>vrijwillige bijdragen</strong> aan het grotere geheel: tijd, kennis, inspanning, het loslaten van persoonlijke erkenning of het helpen realiseren van een idee door anderen. Zo'n bijdrage is alleen passend als de voordelen toetsbaar zijn, de keuze vrij is en er geen beter alternatief met minder verlies bestaat.</p>
+<p><strong>Geen offer van iemands leven, veiligheid, lichamelijke autonomie of waardigheid.</strong> Vrijwilligheid is nooit een vrijbrief voor dwang. Wie ons wantrouwt, is evenzeer uitgenodigd om feiten, doelen en betere alternatieven op hun merites te beoordelen.</p>
+<p class="hint">Dit is een open samenwerkingsbeginsel, geen claim dat specifieke personen rancuneus handelen en geen empirisch bewijs van resultaten.</p></section>
+<section><h2>Een schijnbaar onvermijdelijke keuze</h2>
+<p>Een natuurgebied moet worden beschermd tijdens het broedseizoen. Is de enige keuze volledig afsluiten of schade accepteren? Een derde mogelijkheid combineert routebegeleiding, observatie, vrijwillige samenwerking en adaptieve zones.</p>
+<p>Verander hieronder zelf de <em>verzonnen</em> aannames. Alleen als de kandidaat alle minimumvoorwaarden haalt én zelfs in het slechtste geval beter scoort dan het beste geval van afsluiten, toont het model robuuste dominantie.</p></section>
+<section><h2>Test je aannames</h2><div class="grid">
+<div><label for="b">Publiek nut, minimaal <output id="bv">81</output></label><input id="b" type="range" min="20" max="100" value="81"></div>
+<div><label for="a">Autonomie, minimaal <output id="av">70</output></label><input id="a" type="range" min="0" max="100" value="70"></div>
+<div><label for="h">Schade, maximaal <output id="hv">28</output></label><input id="h" type="range" min="0" max="100" value="28"></div>
+<div><label for="c">Kosten, maximaal <output id="cv">53</output></label><input id="c" type="range" min="0" max="100" value="53"></div>
+<div><label for="f">Haalbaarheid, minimaal <output id="fv">75%</output></label><input id="f" type="range" min="0" max="100" value="75"></div>
+</div><button id="reset" type="button">Herstel voorbeeldwaarden</button>
+<div id="answer" role="status" aria-live="polite"></div>
+<div class="scroll"><table><thead><tr><th>Optie</th><th>Publiek nut</th><th>Autonomie</th><th>Schade</th><th>Kosten</th><th>Haalbaarheid</th></tr></thead><tbody id="data"></tbody></table></div>
+<p class="hint">Dit zijn geen echte metingen. Rechten, uitvoerbaarheid en schade moeten voor een werkelijk besluit onafhankelijk worden onderzocht. Dit prototype neemt zelf geen besluit.</p></section>
+<section><h2>Functionele completering</h2>
+<p>In plaats van schade meteen als noodzakelijk te beschouwen, onderzoeken we welke functie ontbreekt om het publieke doel te verbeteren <em>zonder</em> onnodig mogelijkheden te ontnemen. Daarna maken we die functie realistisch, controleerbaar en toetsbaar.</p>
+<p><strong>Liefde aan logica toevoegen:</strong> betrokkenen niet tot tegenstanders reduceren, geen vrijwillige offers afdwingen, geen onbewezen motieven veronderstellen. Meer mogelijkheden scheppen en zorgvuldig toetsen of ze werkelijk werken.</p>
+<p class="hint">Voor besluitvormers, natuurorganisaties en ontwerpers • Geen juridisch, medisch of beleidsmatig advies • WijSAmen, 14 oktober 2026.</p></section>
+</main><script>
+"use strict";
+const base={benefit:[72,78],autonomy:[22,28],harm:[58,65],cost:[60,70],feas:[93,97]};
+const keys=["b","a","h","c","f"], defaults=[81,70,28,53,75], $=x=>document.getElementById(x);
+function update(){
+  const x=Object.fromEntries(keys.map(k=>[k,Number($(k).value)]));
+  for(const k of keys)$(k+"v").textContent=x[k]+(k==="f"?"%":"");
+  const alt={benefit:[x.b,Math.min(100,x.b+7)],autonomy:[x.a,Math.min(100,x.a+10)],harm:[Math.max(0,x.h-10),x.h],cost:[Math.max(0,x.c-10),x.c],feas:[x.f,Math.min(100,x.f+10)]};
+  const ok=alt.benefit[0]>=70&&alt.harm[1]<=70&&alt.feas[0]>=70;
+  const dominance=ok&&alt.benefit[0]>=base.benefit[1]&&alt.autonomy[0]>=base.autonomy[1]&&alt.harm[1]<=base.harm[0]&&alt.cost[1]<=base.cost[0]&&(
+  alt.benefit[0]>base.benefit[1]||alt.autonomy[0]>base.autonomy[1]||alt.harm[1]<base.harm[0]||alt.cost[1]<base.cost[0]);
+  const answer=$("answer"); answer.className=dominance?"":"not";
+  answer.textContent=dominance?"In deze FICTIEVE casus is de derde optie op alle vier de doelcriteria robuust beter. Dit bewijst niets over echte natuurgebieden.":"Met deze aannames is het alternatief NIET aantoonbaar robuust beter. Juist daarom is onzekerheid zichtbaar maken belangrijk.";
+  const body=$("data");body.replaceChildren();
+  for(const [name,r] of [["Afsluiten",base],["Samen ontwerpen",alt]]){
+    const row=document.createElement("tr");
+    for(const val of [name,...["benefit","autonomy","harm","cost","feas"].map(k=>r[k].join("–")+(k==="feas"?"%":""))]){
+      const td=document.createElement("td");td.textContent=val;row.append(td);
+    }
+    body.append(row);
+  }
+}
+keys.forEach(k=>$(k).addEventListener("input",update));
+$("reset").addEventListener("click",()=>{keys.forEach((k,i)=>$(k).value=defaults[i]);update()});
+update();
+</script></body></html>
