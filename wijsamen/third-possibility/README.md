@@ -4,6 +4,8 @@
 
 > Onderzoek of het grotere geheel beter geholpen kan worden zonder onnodig iemands mogelijkheden of veiligheid aan te tasten.
 
+Bekijk ook het [openbare WijSAmen-projectoverzicht](../WIJSAMEN_PORTFOLIO.md) met de andere onderzoekslijnen en hun bewijsstatus.
+
 ## Bekijk en probeer
 - [Interactieve denkproef](index.html) — pas aannames aan en bekijk wat wel/niet volgt.
 - [Python-model](third_possibility.py) — reproduceerbare vergelijking van alternatieven.
