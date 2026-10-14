@@ -2,6 +2,12 @@
 
 **Openbare muzikale tak van WijSAmen.** Ideeën, teksten en menselijke creatieve keuzes worden vertaald naar muziek met AI als instrument en samenwerkingsmiddel.
 
+## Onze Nummertjes — 13 nummers geïnventariseerd
+De 14 bestanden op Drive bleken 13 unieke opnames te bevatten. Er is inmiddels een eerste offline luistereditie met een 66s-trailer, 13 previews en een afspeelpagina gemaakt. De originele MP3's zijn nog niet op internet geplaatst; per nummer moet de rechtenstatus worden gecontroleerd.
+
+- [Openbare tracklijst en publicatiestatus](ONZE_NUMMERTJES.md)
+- [Notion: Onze Nummertjes](https://app.notion.com/p/3f97a55c529d81259018f0ca3b931796)
+
 ## Eerste bestaande deel-link
 - [Starborn Savior — Suno](https://suno.com/s/3eB0CkAlioZi9aWw) — eerder gedeelde link; de huidige toegangsstatus en rechten zijn nog niet onafhankelijk bevestigd.
 
