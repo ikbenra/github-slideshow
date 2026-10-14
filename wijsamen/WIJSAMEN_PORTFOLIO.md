@@ -13,6 +13,9 @@ WijSAmen verkent hoe menselijke intenties, technische mogelijkheden en verschill
 5. Leg feiten, aannames, onzekerheden, gevolgen, kosten en toetsen afzonderlijk vast.
 6. Bescherm rechten en vrijwilligheid; geef de voorkeur aan omkeerbare proeven.
 
+## Muziek als toegankelijke publieke ingang
+**WijSAmen Music / DJ Droppie / RA — openbare deelcatalogus in ontwikkeling.** Muziek draagt onze ideeën ook buiten technische doelgroepen. [Beluister de eerste eerder gedeelde Suno-track](https://suno.com/s/3eB0CkAlioZi9aWw) en bekijk het [publicatieplan met rechtencontroles](music/README.md). Andere nummers volgen pas na verificatie van hun bronlink en gebruiksrechten.
+
 ## Openbare lijnen en onderzoeksthema's
 Dit overzicht vermeldt uitsluitend projectnamen, doelen en ontwikkelstatus. Niet alle onderliggende ontwerpen en data zijn openbaar of empirisch gevalideerd.
 
